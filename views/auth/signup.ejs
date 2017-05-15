@@ -1,0 +1,39 @@
+
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+  </div>
+</nav>
+<div class="login-container">
+
+  <div class="welcome-box">
+    <h2 class="welcome-message">Share your books and meet other readers</h2>
+  </div>
+
+
+  <div class="form-wrapper">
+
+
+    <form action="/signup" method="POST" id="login-form">
+
+        <div class="form-group">
+          <input type="text" class="basic-form" name="name" placeholder="name" required="" >
+          <input type="text" class="basic-form" name="city" placeholder="city" required="" >
+          <input type="email" class="basic-form" name="email" placeholder="myemail@email.com" required="" >
+          <input type="text" class="basic-form" name="username" placeholder="@username" required="" title="@username">
+          <input type="password" class="basic-form" name="password" placeholder="password" required="" >
+        </div>
+        <button type="submit" class="send-button">Sign up</button>
+
+      <p class="account-message">
+        Do you already have an account?
+        <a href="/login">Log in</a>
+      </p>
+    </form>
+
+
+
+
+  </div>
+
+</div>

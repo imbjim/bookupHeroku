@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+    <a href="/logout" class="navbar-button nabvar-button-right">Logout</a>
+    <a href="/" class="navbar-button navbar-button-left">Home</a>
+  </div>
+</nav>
+<div class="login-container">
+
+  <div class="form-wrapper">
+    <form action="/sendmessagetosender" method="POST">
+        <div class="form-group">
+
+          <input type="text" class="basic-form" name="subject"  placeholder="subject">
+          <input type="text" class="description-form" name="body"  placeholder="body">
+          <input type="hidden" class="description-form"  name="bookId" value="<%= message.book._id %>" >
+          <input type="hidden" class="description-form" name="receiverId" value="<%= message.sender._id %>" >
+          <button type="submit" class="send-button">Send</button>
+        </div>
+    </form>
+</div>

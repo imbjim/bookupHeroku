@@ -1,0 +1,39 @@
+
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+  </div>
+</nav>
+<div class="login-container">
+
+  <div class="welcome-box">
+    <h2 class="welcome-message">Nice to see you here!</h2>
+  </div>
+
+  <div class="form-wrapper">
+
+    <form action="/login" method="POST" id="login-form">
+
+        <div class="form-group">
+          <input type="text" class="basic-form" name="username" placeholder="@username" required="">
+          <input type="password" class="basic-form" name="password" placeholder="password" required="">
+        </div>
+
+        <!-- <% if (typeof message !== "undefined") { %>
+          <div class="error-message"><%= message %></div>
+        <% } %> -->
+
+        <button type="submit" class="send-button">Log in</button>
+
+
+
+      <p class="account-message">
+        Still don't have an account?
+        <a href="/signup">Sign up</a>
+      </p>
+    </form>
+
+
+  </div>
+
+</div>

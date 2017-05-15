@@ -1,0 +1,52 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+    <a href="/logout" class="navbar-button nabvar-button-right">Logout</a>
+    <a href="/" class="navbar-button navbar-button-left">Home</a>
+  </div>
+</nav>
+<div class="container">
+
+  <div class="edit-header-box">
+    <h3 class="edit-profile-header"><%=book.title %></h3>
+  </div>
+
+
+  <div class="show-book-wrapper">
+
+    <div class="show-image">
+      <img src="/<%= book.picture %>" alt="book cover">
+    </div>
+
+    <div class="book-specs">
+
+      <h4 class="book-subheader"> Title </h4>
+      <p><%= book.title %><p>
+
+      <h4 class="book-subheader"> Author </h4>
+      <p><%= book.author %><p>
+
+      <h4 class="book-subheader"> Genre </h4>
+      <p><%= book.genre %><p>
+
+      <h4 class="book-subheader"> Pages </h4>
+      <p><%= book.pages %><p>
+
+      <h4 class="book-subheader"> Description </h4>
+      <p><%= book.description %><p>
+
+    </div>
+
+    <form action="/<%=book._id%>/sharebook" method="POST">
+      <label for="userchoice">Who do you share this book with?</label>
+      <select name="user">
+        <% users.forEach((user) => { %>
+          <option value="<%=user.id%>"><%=user.username%></option>
+        <% }) %>
+      </select>
+      <button type="submit" class="send-button">Share</button>
+    </form>
+
+  </div>
+
+</div>

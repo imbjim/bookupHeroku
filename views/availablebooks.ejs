@@ -1,0 +1,84 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+      <a href="/logout" class="navbar-button nabvar-button-right">Logout</a>
+      <!-- <a href="/" class="navbar-button navbar-button-left">Home</a> -->
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="profile-wrapper">
+
+    <div class="profile-picture-wrapper">
+      <% if (!user.picture) { %>
+        <img src="/images/profile_default.jpg" alt="profile-picture" class="profile-picture">
+      <% } else if (user.picture == "uploads/undefined") { %>
+        <img src="/images/profile_default.jpg" alt="profile-picture" class="profile-picture">
+      <% } else { %>
+        <img src="<%= user.picture%>" alt="profile-picture" class="profile-picture">
+      <% } %>
+    </div>
+    <div class="profile-data-wrapper">
+      <ul>
+        <li><%= user.name %></li>
+        <li><%= user.username %></li>
+        <li><%= user.email %></li>
+        <li><%= user.city %></li>
+        <li><%= user.phone %></li>
+        <li><%= user.country %></li>
+      </ul>
+      <a class="edit-profile-button" href="/edit-profile">Edit Profile</a>
+    </div>
+
+  </div>
+
+
+
+  <nav class="books-navbar">
+    <a href="/">My Books</a>
+    <p>Available Books</p>
+    <a href="/all-books">All Books</a>
+    <a href="/inbox">Inbox</a>
+    <a href="/sentmessages">Sent messages</a>
+  </nav>
+
+  <div class="mybooks-wrapper">
+
+  <% book.forEach((book) => { %>
+    <% if (book.available === true && !(user._id.equals(book.current_user))) { %>
+
+    <div class="mybooks">
+
+      <div class="cover-wrapper">
+        <a class="book-link" href="/<%=book._id%>/showbook">
+          <% if (!book.picture) { %>
+            <img src="/images/book_default.jpg" alt="book cover picture" class="cover">
+          <% } else if (book.picture == "uploads/undefined"){ %>
+            <img src="/images/book_default.jpg" alt="book cover picture" class="cover">
+          <% } else { %>
+            <img src="<%= book.picture%>" alt="" class="cover">
+          <% } %>
+        </a>
+      </div>
+
+      <div class="book-list-info">
+
+
+        <a class="book-link" href="/<%=book._id%>/showbook">
+          <h1><%= book.title %></h1>
+          <h2><%= book.author %></h2>
+        </a>
+        <div class="book-contact">
+          <a href="/sendmessage/<%= book._id %>">Contact</a>
+        </div>
+
+      </div>
+
+    </div>
+    <% } %>
+  <% }); %>
+
+  </div>
+
+</div>

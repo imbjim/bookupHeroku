@@ -1,0 +1,53 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+    <a href="/logout" class="navbar-button nabvar-button-right">Logout</a>
+    <a href="/" class="navbar-button navbar-button-left">Home</a>
+  </div>
+</nav>
+
+<div class="edit-profile-container">
+
+  <div class="edit-header-box">
+    <h3 class="edit-profile-header">Edit your profile</h3>
+  </div>
+
+  <div class="form-wrapper">
+    <form action="/edit" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+
+          <div class="edit-book-box">
+            <label class="label-form" for="username">Username</label>
+            <input type="text" class="basic-form" id ="username" name="username" value="<%= user.username %>" placeholder="username">
+            <label for="name">Name</label>
+            <input type="text" class="basic-form" id="name" name="name" value="<%= user.name %>" placeholder="name">
+            <label for="phone">Mobile Phone</label>
+            <input type="text" class="basic-form" id="mobile" name="phone" value="<%= user.phone %>" placeholder="mobile">
+            <label for="city">City</label>
+            <input type="text" class="basic-form" id="city" name="city" value="<%= user.city %>" placeholder="city">
+
+            <label for="country">Country</label>
+            <input type="text" class="basic-form" id="country" name="country" value="<%= user.country %>" placeholder="country">
+            <label for="age">Age</label>
+            <input type="number" class="basic-form" id="age" name="age" value="<%= user.age %>" placeholder="age">
+            <label for="gender">Gender</label>
+            <input type="text" class="basic-form" id="gender" name="gender" value="<%= user.gender %>"  placeholder="gender">
+            <div class="upload-file">
+              <label for="image">Profile picture</label></br>
+              <input type="file" class="upload" id="profile_image" name="profile_image" value="" >
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="send-button">Save</button>
+        <div class="cancel-button" id="delete-profile">
+          <a href="/<%=user._id%>/deleteprofile">Delete profile</a>
+        </div>
+        <!-- <div class="cancel-button">
+          <a href="/">Cancel</a>
+        </div> -->
+
+    </form>
+  </div>
+
+</div>

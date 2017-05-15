@@ -1,0 +1,46 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+    <a href="/logout" class="navbar-button nabvar-button-right">Logout</a>
+    <!-- <a href="/" class="navbar-button navbar-button-left">Home</a> -->
+  </div>
+</nav>
+<div class="container">
+
+    <div class="edit-header-box">
+      <h3 class="new-account-header">Add your book</h3>
+    </div>
+    
+    <div class="form-wrapper">
+      <form action="/newbook" method="POST" enctype="multipart/form-data">
+
+          <div class="add-book-box">
+            <input type="text" class="basic-form" name="title" placeholder="title" required="">
+            <input type="text" class="basic-form" name="author" placeholder="author" required="">
+            <input type="text" class="basic-form" name="genre" placeholder="genre">
+            <input type="number" class="basic-form" name="pages" placeholder="number of pages">
+            <input type="hidden" class="basic-form" name="id" placeholder="bookid">
+            <input type="hidden" class="basic-form" name="bookPicture" placeholder="bookid">
+            <textarea class="description-form" name="description" placeholder="description"></textarea>
+            <div class="available-check">
+              <label for="available">This book will be shared</label> <br>
+                <input type="radio" name="available" value="1" required="" checked="checked"> Yes <br>
+            </div>
+
+
+            <div class="add-file">
+              <label for="cover">Upload a cover</label>
+              <input type="file" class="upload" id="cover" name="cover">
+            </div>
+
+          </div>
+
+          <button type="submit" class="send-button">Add</button>
+          <div class="cancel-button">
+            <a href="/">Cancel</a>
+          </div>
+
+      </form>
+
+
+  </div>

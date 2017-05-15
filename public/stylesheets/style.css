@@ -1,0 +1,874 @@
+* body, div, span, h1, h2, h3, h4, ul, ol, li, p, nav, label, input a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+
+
+body {
+  font-family: arial, sans-serif;
+  background: #f1f1f1;
+  /*background-image: url("../images/book-blur.jpg");*/
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 0 20px 0;
+  background: #282828;
+}
+
+.navbar-wrapper {
+  width: 100%;
+}
+
+navbar-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.brand {
+  width: 100px;
+  margin: 4px 0 0 15px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  float: left;
+}
+
+.navbar-profile-picture {
+  width: 40px;
+  height: 40px;
+  /*border-radius: 5px 5px 5px 5px;*/
+  margin: 10px 10px 0 0;
+  background: #ddd;
+  float: right;
+}
+
+.navbar-button {
+  float: right;
+  width: 70px;
+  height: 60px;;
+  font-size: 14px;
+  color: #fff;
+  background: #282828;
+  border: none;
+  padding-top: 25px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.nabvar-button-right {
+  margin-right: 20px;
+  border-left: none;
+}
+
+.navbar-button:hover {
+  background: #999;
+  cursor: pointer;
+}
+
+.login-container {
+  max-width: 720px;
+  height: 400px;
+  margin: 0 auto;
+
+}
+
+.welcome-message {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 22px
+}
+
+.home-message {
+  width: 350px;
+  margin: 40px auto 30px auto;
+  text-align: center;
+  font-size: 22px
+}
+
+.form-group p {
+  text-align: center;
+}
+
+.basic-label {
+  width: 260px;
+  margin: 10px auto 0 auto;
+}
+
+.basic-form {
+  width: 260px;
+  height: 45px;
+  display: block;
+  margin: 10px auto 0 auto;
+  padding: 0 10px 0 10px;
+  border-style: solid;
+  border: 1px solid #ddd;
+  /*border-radius: 3px 3px 3px 3px;*/
+  background: #efefef;
+  /*background: rgba(255, 255, 255, 0.8);*/
+  font-size: 14px;
+  box-sizing: border-box;
+  outline-color: #2d69b0;
+  outline-width: 2px;
+}
+
+.add-file {
+  text-align: center;
+  margin: 30px;
+}
+
+.send-button {
+  width: 80px;
+  height: 35px;
+  margin: 25px auto;
+  display: block;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background: #7fc857;
+  /*border-radius: 5px 5px 5px 5px;*/
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background: #96d971;
+}
+
+.account-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/*home styles*/
+
+.container {
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.messages-home-box {
+  height: 50px;
+  width: 100%;
+  margin: 20px auto;
+  background: #495867;
+  /*border-radius: 5px 5px 5px 5px;*/
+  cursor: pointer;
+}
+
+.messages-home-box:hover {
+  background: #616f7e;
+  cursor: pointer;
+}
+
+.messages-home-box p {
+  padding: 15px;
+  text-align: center;
+  color: #eee;
+  font-size: 19px;
+}
+
+.option-container {
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.option-box {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  /*border-radius: 5px 5px 5px 5px;*/
+  margin-bottom: 10px;
+  border: 2px solid #eee;
+  color: #2d69b0;
+  display: block;
+  padding: 40px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.option-box:hover {
+  /*background: #ecf4e9;*/
+  border: 2px solid #7fc857;
+  cursor: pointer;
+}
+
+
+
+/*---------------LOGIN, SIGNUP AND HOME--------------*/
+/*---------------------UNTIL HERE--------------*/
+
+
+/*------------------------HOME--------------*/
+
+/*html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: table;
+}*/
+/*.footer, html, body {
+  height: 100%;
+}*/
+
+/*---------------------NEW ACCOUNT-------------------*/
+
+.welcome-box {
+  width: 70%;
+  margin: 15px auto 10px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+}
+
+.form-wrapper {
+  width: 70%;
+  margin: 10px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+
+}
+
+.new-account-header {
+  width: 320px;
+  margin: 30px auto 20px auto;
+  text-align: center;
+  font-size: 20px
+}
+
+.new-account-subheader {
+  width: 320px;
+  margin: 10px auto 15px auto;
+  text-align: center;
+  font-size: 15px
+}
+
+/*--------------------EDIT PROFILE-------------------*/
+
+.edit-header-box {
+  width: 100%;
+  margin: 15px auto 10px auto;
+  padding: 30px 20px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  /*box-sizing: border-box;*/
+}
+
+.edit-profile-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/*.edit-profile-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
+
+.edit-profile-header {
+
+  font-size: 20px;
+  text-align: center;
+}
+
+.upload-file {
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-file label{
+  display: block;
+}
+
+.upload-button {
+  border: none;
+  outline: none;
+}
+
+.cancel-button {
+  width: 80px;
+  height: 35px;
+  margin: 10px auto;
+  display: block;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background: #a32626;
+  /*border-radius: 5px 5px 5px 5px;*/
+  cursor: pointer;
+  display: flex;
+}
+
+cancel-button:hover {
+  background: #b33737;
+}
+
+.cancel-button a {
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+}
+
+#delete-profile a {
+  text-align: center;
+}
+
+/*----------------------NEW BOOK-------------------*/
+
+.add-book-box {
+  width: 260px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  background: #fff;
+  border-bottom: 3px solid #ddd;
+}
+
+.description-form {
+  height: 80px;
+  width: 260px;
+  margin: 10px auto 0 auto;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-style: solid;
+  border: 1px solid #ddd;
+  /*border-radius: 3px 3px 3px 3px;*/
+  background: #efefef;
+  /*background: rgba(255, 255, 255, 0.8);*/
+  font-size: 14px;
+  box-sizing: border-box;
+  outline-color: #7fc857;
+  outline-width: 2px;
+  color: #666;
+  resize: none;
+}
+
+.available-check {
+  text-align: center;
+}
+
+
+/*----------------------PROFILE---------------------*/
+
+.profile-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+.profile-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.profile-picture-wrapper {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid #e9e9e9;
+  margin: 15px 7px 10px 15px;
+  padding: 5px;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.profile-picture {
+  width: 100%;
+  margin: auto;
+}
+
+.profile-data-wrapper {
+  padding: 0px 7px 0px 7px;
+  /*border-radius: 4px 4px 4px 4px;*/
+  margin-top: 15px;
+  flex-grow: 1;
+  float: left;
+}
+
+.profile-data-wrapper li:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.profile-data-wrapper ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-data-wrapper li {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 0px;
+  padding-bottom: 3px;
+  line-height: 13px;
+}
+
+.edit-profile-button {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2d69b0;
+  margin: 5px 0px 0px 10px;
+  padding: 5px 0px 5px 0px;
+}
+
+.edit-profile-button:hover {
+  color: #555;
+}
+
+/*---------------------BOOKS NAVBAR--------------------*/
+
+
+.books-navbar {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.books-navbar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.books-navbar a {
+  text-decoration: none;
+  padding: 10px 7px 10px 7px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 13px;
+  color: #282828;
+  display: block;
+  float: left;
+  border-right: 1px solid #e2e2e2;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.books-navbar p {
+  text-decoration: none;
+  padding: 10px 7px 10px 7px;
+  box-sizing: border-box;
+  background: #2d69b0;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  float: left;
+  border-right: 1px solid #e2e2e2;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.books-navbar a:last-child {
+  border-right: none;
+}
+
+.books-navbar a:hover {
+  background: #2d69b0;
+  color: #fff;
+}
+
+/*---------------MY BOOKS INSIDE PROFILE---------------*/
+
+.mybooks-wrapper {
+  width: 100%;
+  min-height: 300px;
+  margin: 0px auto;
+  border: 1px solid #e9e9e9;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.mybooks-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mybooks {
+  width: 150px;
+  height: 260px;
+  margin: 10px 8px;;
+  background: #f1f1f1;
+  /*border-radius: 6px 6px 6px 6px;*/
+  box-sizing:padding-box;
+  float: left;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 2px solid #e2e2e2;
+  display: flex;
+  flex-direction: column;
+}
+
+.mybooks:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.new {
+  height: 260px;
+}
+
+.new a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.cover-wrapper {
+  width: 100%;
+  height: 180px;
+  background: #f1f1f1;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+}
+
+.cover-wrapper img {
+
+}
+
+.cover {
+  width: 98%;
+  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
+  /*overflow: hidden;*/
+}
+
+.book-list-info {
+  position: relative;
+  padding: 10px 15px 10px 15px;
+}
+
+.book-list-info h1 {
+
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.book-list-info h2 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.book-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.book-link:hover {
+  color: #777;
+}
+
+.book-options {
+  font-size: 13px;
+  text-align: left;
+  padding: 10px 10px 7px 0px;
+  display: flex;
+}
+
+.book-options a {
+  text-decoration: none;
+}
+
+.book-options a:first-child {
+  color: #2d69b0;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #aaa;
+}
+
+.book-options a:nth-child(2) {
+  color: #2d69b0;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #aaa;
+}
+
+.book-options a:first-child:hover {
+  color: #777;
+}
+
+.book-options a:nth-child(2):hover {
+  color: #777;
+}
+
+.book-options a:last-child {
+  color: rgb(171, 4, 34);
+}
+
+.book-options a:last-child:hover {
+  color: rgb(207, 50, 77);
+}
+
+.show-book {
+  font-size: 13px;
+  text-align: left;
+  margin-top: 10px;
+  padding: 0px 10px 7px 0px;
+  text-decoration: none;
+  color: #333;
+}
+
+.show-book a {
+  color: #333;
+}
+
+.show-book a:hover{
+  color: #777;
+}
+
+
+
+.book-contact {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 10px 7px 0px;
+  display: flex;
+}
+
+.book-contact a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #2d69b0;
+}
+
+.book-contact a:hover {
+  color: #777;
+}
+
+/*---------------EDIT BOOK---------------*/
+
+.edit-book-box {
+  width: 260px;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+}
+
+.edit-book-box label {
+  display: block;
+  padding: 20px 0px 0px 0px;
+  color: #333;
+  font-size: 15px;
+  margin-left: -7px;
+}
+
+
+/*----------------------SHOW BOOK VIEW---------------------*/
+
+.show-book-wrapper {
+  width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+}
+
+.show-book-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.show-image {
+  width: 200px;
+  float: left;
+}
+
+.show-image img {
+  width: 100%;
+}
+
+.book-specs {
+  padding-left: 25px;
+  float: left;
+}
+
+.book-specs h4 {
+  padding: 5px 0px 5px 0px;
+}
+
+.book-specs p {
+  font-size: 14px;
+}
+
+
+/*----------------------MESSAGES VIEW---------------------*/
+.messages {
+  font: bold;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: #696969;
+}
+
+.messages ul {
+  list-style-type: none;
+}
+
+.messages a {
+color:inherit;
+}
+
+.messages span {
+  font-weight: bolder;
+  color: #282828;
+}
+
+/*----------------------AVAILABLE BOOKS VIEW---------------------*/
+.book-options {
+  color: #777;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book-options:hover {
+  text-decoration: none;
+}
+
+/*----------------------SENT MESSAGES VIEW AND INBOX VIEW---------------------*/
+.delete-message-button {
+  width: 80px;
+  height: 35px;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background: #a32626;
+  /*border-radius: 5px 5px 5px 5px;*/
+  cursor: pointer;
+  display: flex;
+  color: white;
+}
+
+.delete-message-button a {
+  margin: 0.5rem auto;
+  text-decoration: none;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+/*--------------MEDIA QUERIES-------------------------------*/
+/*//////////////////////////////////////////////////////////////*/
+
+
+@media (min-width: 500px) {
+  .footer {
+    visibility: visible;
+  }
+
+  .navbar-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .profile-data-wrapper {
+    padding: 10px 10px 0px 7px;
+  }
+
+  .profile-data-wrapper li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    /*border-bottom: 2px solid #666;*/
+  }
+  .profile-data-wrapper li {
+    font-size: 14px;
+    margin: -2px;
+    line-height: 20px;
+  }
+
+  .profile-picture-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 15px 15px 20px 15px;
+  }
+
+  .books-navbar a {
+    text-decoration: none;
+    padding: 10px 7px 10px 7px;
+    box-sizing: border-box;
+    /*background: #282828;*/
+    font-size: 15px;
+    color: #282828;
+    display: block;
+    float: left;
+  }
+}
+
+colors
+#F75C03
+#EDA20B
+#F2C01D
+#00A6ED
+#3066BE
+
+
+#E63946
+#F1FAEE
+#A8DADC
+#457B9D
+#1D3557
+
+#1D3557
+#FDE74C
+#9BC53D
+#E55934
+#FA7921
+
+#495867
+#577399
+#BDD5EA
+#F7F7FF
+#FE5F55
+
+#7fc857
+#96d971
+#504136
+#A49E8D
+#2E2E2E
+#51483E
+#1E140D
+#342725

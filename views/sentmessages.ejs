@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <h3 class="brand">bookup</h3>
+    <a href="/logout" class="navbar-button nabvar-button-right">Logout</a>
+    <a href="/" class="navbar-button navbar-button-left">Home</a>
+  </div>
+</nav>
+<div class="container">
+
+  <div class="mybooks-wrapper">
+<% message.forEach( (message) => { %>
+    <div class="messages">
+      <div class="messages-list">
+        <ul>
+          <li> <span>Message to: </span> <a href="/sendmessagefromsent/<%= message._id %>"><%= message.receiver.name %></a></li>
+          <li> <span>Book: </span> <%= message.book.title %></li>
+          <li> <span>Subject: </span> <%= message.subject %></li>
+          <li> <span> Message: </span> <%= message.body %></li>
+          <div class="delete-message-button" id="sentmessages-delete">
+            <a href="/<%=message._id%>/deletemessage">Delete</a>
+          </div>
+        </ul>
+      </div>
+    </div>
+<% }); %>
+  </div>
+
+</div>
